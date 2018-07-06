@@ -1780,7 +1780,8 @@ WebPlugin
 										
 									}else{
 										
-										if ( referrer != null ){
+										// Android Hack
+										if ( referrer != null && !referrer.startsWith("http://search.vuze.com/") ){
 											
 											result = false;
 											
